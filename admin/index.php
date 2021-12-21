@@ -15,6 +15,9 @@ switch ($action) {
     case 'danh-muc':
         $VIEWS = "views/danh-muc/add-danh-muc.php";
         break;
+    case 'update_dm':
+        $VIEWS = "views/danh-muc/update_dm.php";
+        break;
     case 'san-pham':
         $VIEWS = "views/san-pham/add-san-pham.php";
         break;
@@ -23,4 +26,3 @@ switch ($action) {
         break;
 }
 require_once 'views/layouts/index.php';
-?>

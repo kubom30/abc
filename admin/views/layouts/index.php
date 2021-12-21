@@ -51,7 +51,7 @@
             <div class="main">
                 <?= include $VIEWS;?>
             </div>
-            <div class="footer">
+            <div class="footer bg-danger py-4 text-center text-white">
                 Bom student &copy; coppyright 2021
             </div>
         </div>

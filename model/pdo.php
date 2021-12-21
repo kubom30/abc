@@ -15,7 +15,7 @@ function pdo_get_connection()
         echo "kết nối thất bại" . $e->getMessage();
     }
 }
-//hàm thực thi csdl
+//hàm thực thi csdl, thêm (INSERT INTO) ,xoá(DELETE) , Cập nhật,sửa (UPDATE)
 function pdo_execute($sql)
 {
     $sql_args = array_slice(func_get_args(), 1);
@@ -44,7 +44,8 @@ function pdo_execute2($sql)
         unset($conn);
     }
 }
-//hàm truy vấn nhìều dl
+//hàm truy vấn nhìều dữ liệu (hàm thực thi) (SELECT * FROM)
+//lấy dữ liệu từ Database
 function pdo_query($sql)
 {
     $sql_args = array_slice(func_get_args(), 1);
