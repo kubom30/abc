@@ -21,6 +21,9 @@ switch ($action) {
     case 'san-pham':
         $VIEWS = "views/san-pham/add-san-pham.php";
         break;
+        case 'san-pham':
+            $VIEWS = "views/san-pham/trang-san-pham.php";
+            break;
     case 'khuyen-mai':
         $VIEWS = "views/khuyen-mai/add-km.php";
         break;

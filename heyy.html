@@ -1,57 +1,41 @@
-
-    <div class=" formtitle" >
+<div class="row" style="width:100%;float: left;">
+    <div class="row formtitle" style="height:50px;background:lightgreen;">
         <h1>Thêm Mới Sản Phẩm</h1>
     </div>
-    <div class="formcontent">
+    <div class="row formcontent">
         <form action="index.php?act=xu-ly-sp.php" method="post" enctype="multipart/form-data" name="add_san_pham">
             <div class=" row mb10" style="margin-bottom: 10px;">
                 Danh mục:
-               <select name="ten_dm" id="" style="width:100px;margin-left: 52px;">
-               <?php
-               if (isset($_POST['ten_dm'])) {
-                      $ten_dm=$POST['id_ten_dm'];
-                      
-                        $sql="SELECT * FROM `danh_muc` WHERE 1";
-                         $info_dm=pdo_query_one($sql,$ten_dm);
-                        }
-                        ?>
-               <?php    
-              
-               foreach ($ten_dm as $key => $value){
-                echo $value;
-               }
-               ?>
+               <select name="id_dm" id="" style="width:100px;margin-left: 52px;  ">
+                    
+                  
+                   
                </select>
-            </div>   
-        
+            </div>
+
             <div class=" row mb10" style="margin-bottom: 10px;">
                 Mã sản phẩm:
-                <input type="text" name="id_sp"
-               style="margin-left: 32px;">
-</div>
+                <input type="text" name="id_sp"style="margin-left: 32px;">
+            </div>
 
             <div class=" row mb10" style="margin-bottom: 10px;">
                 Tên sản phẩm:
-                <input type="text" name="ten_sp"
- style="margin-left: 30px ;">
+                <input type="text" name="ten_sp"style="margin-left: 30px ;">
             </div>
 
             <div class=" row mb10" style="margin-bottom: 10px;">
                 Đơn giá:
-                <input type="text" name="gia_sp"
-style="margin-left: 67px;">
+                <input type="text" name="gia_sp"style="margin-left: 67px;">
             </div>
 
             <div class=" row mb10" style="margin-bottom: 10px;">
                 Số Lượng:
-                <input type="text" name="so_luong"
-style="margin-left: 55px;">
+                <input type="text" name="so_luong"style="margin-left: 55px;">
             </div>
 
             <div class=" row mb10" style="margin-bottom: 10px;">
                 Hình:
-                <input type="file" name="hinh_anh"
-style="margin-left: 85px; border-radius:5px;">
+                <input type="file" name="hinh_anh"style="margin-left: 85px; border-radius:5px;">
             </div>
             <div class=" row mb10" >
                 Mô tả:
@@ -65,8 +49,6 @@ style="margin-left: 85px; border-radius:5px;">
             </div>
            
         </form>
- 
-
-<script>
-   
-</script>
+    </div>
+</div>
+</div>

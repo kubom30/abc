@@ -6,11 +6,9 @@
             <div class="form-group">
                 <label for="exampleInputEmail1">Tên danh mục</label>
                 <input type="text" class="form-control" autocomplete="off" id="" aria-describedby="" name="add_ten_dm" placeholder="Nhập tên danh mục">
-            </div>
-
+</div>
             <button type="submit" class="btn btn-success">Thêm </button>
         </form>
-
     </div>
 </div>
 <div class="row my-3">
